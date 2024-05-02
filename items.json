@@ -4,7 +4,7 @@
     "name": "Vintage Denim Jacket",
     "type": "Vintage",
     "description": "Classic denim jacket with a vintage wash and distressed detailing.",
-    "image": "vintage_denim_jacket.jpg",
+    "image": "assets/Screenshot 2024-05-01 184305.png",
     "size": ["S", "M", "L", "XL"],
     "price" : "$10",
     "sold": false
@@ -14,7 +14,7 @@
     "name": "Street Wear Hoodie",
     "type": "Street Wear",
     "description": "Comfortable hoodie with street-inspired graphics and a relaxed fit.",
-    "image": "street_wear_hoodie.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["XS", "S", "M", "L", "XL"],
     "price" : "$10",
     "sold": true
@@ -24,7 +24,7 @@
     "name": "Canvas Sneakers",
     "type": "Shoes",
     "description": "Canvas sneakers with a rubber sole, perfect for everyday wear.",
-    "image": "canvas_sneakers.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
     "price" : "$10",
     "sold": false
@@ -34,7 +34,7 @@
     "name": "Canvas Sneakers",
     "type": "Shoes",
     "description": "Canvas sneakers with a rubber sole, perfect for everyday wear.",
-    "image": "canvas_sneakers.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
     "price" : "$10",
     "sold": false
@@ -44,7 +44,7 @@
     "name": "Canvas Sneakers",
     "type": "Shoes",
     "description": "Canvas sneakers with a rubber sole, perfect for everyday wear.",
-    "image": "canvas_sneakers.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
     "price" : "$10",
     "sold": false
@@ -53,7 +53,7 @@
   "name": "Vintage Denim Jacket",
   "type": "Vintage",
   "description": "Classic denim jacket with a vintage wash and distressed detailing.",
-  "image": "vintage_denim_jacket.jpg",
+  "image": "assets/Screenshot 2024-05-01 183944.png",
   "size": ["S", "M", "L", "XL"],
   "price" : "$10",
   "sold": false
@@ -63,7 +63,7 @@
     "name": "Street Wear Hoodie",
     "type": "Street Wear",
     "description": "Comfortable hoodie with street-inspired graphics and a relaxed fit.",
-    "image": "street_wear_hoodie.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["XS", "S", "M", "L", "XL"],
     "price" : "$10",
     "sold": true
@@ -73,7 +73,7 @@
     "name": "Canvas Sneakers",
     "type": "Shoes",
     "description": "Canvas sneakers with a rubber sole, perfect for everyday wear.",
-    "image": "canvas_sneakers.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
     "price" : "$10",
     "sold": false
@@ -83,7 +83,7 @@
     "name": "Canvas Sneakers",
     "type": "Shoes",
     "description": "Canvas sneakers with a rubber sole, perfect for everyday wear.",
-    "image": "canvas_sneakers.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
     "price" : "$10",
     "sold": false
@@ -93,7 +93,7 @@
     "name": "Canvas Sneakers",
     "type": "Shoes",
     "description": "Canvas sneakers with a rubber sole, perfect for everyday wear.",
-    "image": "canvas_sneakers.jpg",
+    "image": "assets/Screenshot 2024-05-01 183944.png",
     "size": ["US 5", "US 6", "US 7", "US 8", "US 9", "US 10"],
     "price" : "$10",
     "sold": false
