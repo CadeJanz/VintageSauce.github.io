@@ -33,12 +33,42 @@ function displayClothingItems(clothingData, itemType) {
     });
 }
 
+function showList()
+{
+    var listItems = document.querySelectorAll('#sidebar .menu .dropdown ul li');
+    listItems.forEach(function(item) {
+        item.style.display = 'block';
+    });
+}
 function showType(itemType){
     fetch('items.json')
         .then(response => response.json())
         .then(data => displayClothingItems(data, itemType))
         .catch(error => console.error('Error fetching clothing data:', error));
+
+
+    if (window.innerWidth < 600) {
+        var listItems = document.querySelectorAll('#sidebar .menu .dropdown ul li');
+        listItems.forEach(function(item) {
+            item.style.display = 'none';
+        });
+    }
 }
+
+function handleScreenSizeChange() {
+    if (window.innerWidth > 600) {
+        var listItems = document.querySelectorAll('#sidebar .menu .dropdown ul li');
+        listItems.forEach(function(item) {
+            item.style.display = 'inline-block';
+        });
+    }
+}
+
+// Run the function initially to set the initial state based on the current screen size
+handleScreenSizeChange();
+
+// Add an event listener for the resize event to handle changes in screen size
+window.addEventListener('resize', handleScreenSizeChange);
 
 
 // Fetch clothing data from JSON file

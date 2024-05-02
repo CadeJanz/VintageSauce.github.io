@@ -752,11 +752,11 @@ button {
         background-position: -200px -1143px;
     }
 }
-@media (max-width: 700px) {
-    body {
-        transform: scale(0.65);
-    }
-}
+/*@media (max-width: 700px) {*/
+/*    body {*/
+/*        transform: scale(0.65);*/
+/*    }*/
+/*}*/
 
 @keyframes fadeOut {
     0% { opacity: 1; }

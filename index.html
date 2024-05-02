@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <meta charset="UTF-8">
     <title>Vintage Sauce</title>
     <link rel="stylesheet" type="text/css" href="styles/animation.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/mobile.css">
+<!--    <link rel="stylesheet" type="text/css" href="styles/mobile.css">-->
 </head>
 <body id="test">
     <div class="banner">
@@ -17,16 +17,21 @@
     </div>
 
 
-    <div id="sidebar">
-        <ul>
-            <li><a onclick="showType('Vintage')">Vintage</a></li>
-            <li><a onclick="showType('Street Wear')">Street Wear</a></li>
-            <li><a onclick="showType('Shoes')">Shoes</a></li>
-            <li><a>Contact</a></li>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li class="dropdown">
+                <a id="dropdownButton" onclick="showList()" href="#">Dropdown</a>
+                <ul>
+                    <li><a onclick="showType('Vintage')">Vintage</a></li>
+                    <li><a onclick="showType('Street Wear')">Street Wear</a></li>
+                    <li><a onclick="showType('Shoes')">Shoes</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 
-    <<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <div id="scene" class="scene">
         <div id="ken" class="ken stance"></div>
             <div id="chun-li" class="chun-li listance flip"></div>

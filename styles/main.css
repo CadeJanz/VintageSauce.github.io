@@ -220,16 +220,9 @@ h1{
     margin-right: 10px; /* Adjust margin between list items */
 }
 
-/*#sidebar ul li:last-child {*/
-/*    margin-right: 0; !* Remove margin from last list item to prevent extra space *!*/
-/*}*/
-
 #sidebar ul li a {
     text-decoration: none;
     color: #fff;
-    /*padding: 5px 10px;*/
-    /*border-radius: 5px;*/
-    /*background-color: #ddd;*/
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -237,6 +230,58 @@ h1{
     background-color: #fed128; /* Retro arcade hover color */
     color: #ffffff; /* Change text color as needed */
     box-shadow: 0 0 5px #ffcc00; /* Add a glowing effect */
+}
+
+
+@media only screen and (min-width: 601px) {
+    #dropdownButton {
+        display: none;
+    }
+    #sidebar ul li {
+        display: inline-block; /* Display list items side by side */
+        margin-right: 10px; /* Adjust margin between list items */
+    }
+    .dropdown:hover ul {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .item {
+        color: #fff;
+        text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+        font-size: 20px;
+        letter-spacing: 5px;
+        padding: 10px; /* Add padding for spacing */
+        box-sizing: border-box; /* Include padding and border in the width */
+        width: calc(50% - 20px); /* Set width for four items per row */
+        text-align: center;
+        align-items: center; /* Align contents horizontally */
+        margin: 10px; /* Add margin for spacing */
+
+    }
+    #sidebar ul li {
+        display: list-item;/* Display list items side by side */
+        margin-right: 0; /* Adjust margin between list items */
+    }
+    .dropdown ul {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .dropdown:hover ul {
+        display: list-item;
+    }
+
+    .dropdown ul li a {
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+
+
 }
 
 
