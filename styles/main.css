@@ -3,10 +3,12 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 body {
     font-family: 'Press Start 2P', cursive;
     background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+    overflow-x: hidden;
 }
 
 .banner {
@@ -24,7 +26,7 @@ body {
 
 .start{
     position: absolute;
-    top: 0;
+    top: 500px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -253,7 +255,7 @@ h1{
         letter-spacing: 5px;
         padding: 10px; /* Add padding for spacing */
         box-sizing: border-box; /* Include padding and border in the width */
-        width: calc(50% - 20px); /* Set width for four items per row */
+        width: calc(100% - 20px); /* Set width for four items per row */
         text-align: center;
         align-items: center; /* Align contents horizontally */
         margin: 10px; /* Add margin for spacing */
