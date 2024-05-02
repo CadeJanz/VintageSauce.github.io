@@ -1,0 +1,243 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+}
+
+.banner {
+    background-color: rgb(131, 67, 130); /* Color of the banner */
+    width: 100%; /* Full width */
+    height: 150px; /* Height of the banner */
+    position: absolute; /* Position at the top */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    text-align: center; /* Center-align text */
+    color: #fff; /* Text color of the banner */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Box shadow for backlit effect */
+}
+
+
+.start{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    animation: blink 1s steps(4, start) infinite;
+}
+#clothing-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: flex-start; /* Align items at the beginning */
+    padding: 10px; /* Add padding for spacing */
+}
+
+
+.item {
+    color: #fff;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    font-size: 18px;
+    /*padding-right: 75px;*/
+    /*padding-left: 75px;*/
+    letter-spacing: 5px;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the width */
+    width: calc(25% - 20px); /* Set width for four items per row */
+    text-align: center;
+    align-items: center; /* Align contents horizontally */
+    margin: 10px; /* Add margin for spacing */
+
+}
+.item img {
+    width: 250px;
+    height: 250px;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.price-buy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-align contents horizontally */
+}
+
+.price-buy-container button {
+    margin-left: 10px;
+}
+h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 90px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    animation: blink 1s steps(4, start) infinite;
+}
+@-moz-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@-o-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+#scrollable-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    /*height: calc(100% - 250px);*/
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 200px; /* Add margin to separate from the title */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container takes full height of the banner */
+}
+
+.neon {
+    font-family: neon;
+    color: #fb4264;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #f40a35;
+}
+
+.flux {
+    font-family: neon;
+    color: #426dfb;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356ff;
+}
+
+.neon {
+    animation: neon 2s ease infinite;
+    -moz-animation: neon 2s ease infinite;
+    -webkit-animation: neon 2s ease infinite;
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+        0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+        color: #fed128;
+    }
+    50% {
+        text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+        0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+        color: #806914;
+    }
+}
+
+.flux {
+    animation: flux 4s linear infinite;
+    -moz-animation: flux 4s linear infinite;
+    -webkit-animation: flux 4s linear infinite;
+    -o-animation: flux 4s linear infinite;
+}
+
+
+@keyframes flux {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #00fffc, 0 0 3vw #00fffc, 0 0 10vw #00fffc,
+        0 0 10vw #00fffc, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+        color: #00fffc;
+    }
+    50% {
+        text-shadow: 0 0 0.5vw #00a9a6, 0 0 1.5vw #00a9a6, 0 0 5vw #00a9a6,
+        0 0 5vw #00a9a6, 0 0 0.2vw #00a9a6, 0.5vw 0.5vw 0.1vw #0a3940;
+        color: #007f7c;
+    }
+}
+
+#sidebar {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    color: #fff;
+    /*text-align: center;*/
+    margin: auto;
+    /*line-height: 40px;*/
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    z-index: 999;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    display: inline-block; /* Display list items side by side */
+    margin-right: 10px; /* Adjust margin between list items */
+}
+
+/*#sidebar ul li:last-child {*/
+/*    margin-right: 0; !* Remove margin from last list item to prevent extra space *!*/
+/*}*/
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    /*padding: 5px 10px;*/
+    /*border-radius: 5px;*/
+    /*background-color: #ddd;*/
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background-color: #fed128; /* Retro arcade hover color */
+    color: #ffffff; /* Change text color as needed */
+    box-shadow: 0 0 5px #ffcc00; /* Add a glowing effect */
+}
+
+
+

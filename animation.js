@@ -1,6 +1,7 @@
+
 var ken = $('.ken'),
     chun = $('.chun-li'),
-    button = document.getElementById('button'),
+    button = document.getElementById('start'),
     theme = new Howl({
         src: ['https://s3-us-west-2.amazonaws.com/s.cdpn.io/1141260/chun-theme.mp3']
     }),
@@ -25,8 +26,8 @@ button.addEventListener('click', onClick, false);
 function runIt() {
 
     setTimeout(function(){
-        walkin(ken, 0,'kenwalk','+=100', 1000);
-        walkin(chun, 500,'chunwalk','-=135', 1200);
+        walkin(ken, 0,'kenwalk','+=70', 1000);
+        walkin(chun, 500,'chunwalk','-=105', 1200);
     }, 2000);
     setTimeout(function(){
         move(ken, 'punch', 500);
@@ -95,6 +96,20 @@ function runIt() {
     setTimeout(function(){
         $('.box').addClass('animate');
     }, 16000);
+    setTimeout(function(){
+        walkin(ken, 0,'kenwalk','+=900', 1000);
+    },18000)
+    setTimeout(function() {
+        // Add a class to trigger the fade away or fall down animation
+        document.getElementById("scene").classList.add("fadeOut");
+        //document.getElementById("scene").style.display="none";
+    }, 18500);
+    setTimeout(function() {
+        document.getElementById("scene").style.display="none";
+    }, 20000);
+    setTimeout(function() {
+        theme.stop();
+    }, 21000);
 }
 function still(char) {
     $(char).delay(2000).addClass('still').queue(function() {

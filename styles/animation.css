@@ -1,0 +1,767 @@
+button {
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    line-height: 1.8;
+    font-family: "Press Start 2P", cursive;
+    z-index: 999;
+    text-align: center;
+}
+
+@-webkit-keyframes grow {
+    0% {
+        transform: scale(1) translateX(-50%);
+    }
+    50% {
+        transform: scale(1.1) translateX(-45%);
+    }
+    100% {
+        transform: scale(1) translateX(-50%);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1) translateX(-50%);
+    }
+    50% {
+        transform: scale(1.1) translateX(-45%);
+    }
+    100% {
+        transform: scale(1) translateX(-50%);
+    }
+}
+@-webkit-keyframes ko {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes ko {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-216px);
+    }
+    80% {
+        opacity: 0.85;
+        transform: translateY(58px);
+    }
+    85% {
+        opacity: 0.85;
+        transform: translateY(53px);
+    }
+    90% {
+        opacity: 0.85;
+        transform: translateY(58px);
+    }
+    95% {
+        opacity: 0.85;
+        transform: translateY(53px);
+    }
+    100% {
+        opacity: 0.85;
+        transform: translateY(58px);
+    }
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-216px);
+    }
+    80% {
+        opacity: 0.85;
+        transform: translateY(58px);
+    }
+    85% {
+        opacity: 0.85;
+        transform: translateY(53px);
+    }
+    90% {
+        opacity: 0.85;
+        transform: translateY(58px);
+    }
+    95% {
+        opacity: 0.85;
+        transform: translateY(53px);
+    }
+    100% {
+        opacity: 0.85;
+        transform: translateY(58px);
+    }
+}
+.scene {
+    /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1141260/arcade.jpg);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-x: visible; /* Allow overflow in the horizontal direction */
+}
+
+.boxes {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    font-size: 50px;
+    flex: 0 0 1em;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0 1px;
+    padding: 0.25em;
+    text-align: center;
+    transform: translateY(-216px);
+    opacity: 0;
+}
+.box:nth-child(1).animate {
+    -webkit-animation: drop 0.2727272727s 0.8333333333s forwards ease-in;
+    animation: drop 0.2727272727s 0.8333333333s forwards ease-in;
+}
+.box:nth-child(2).animate {
+    -webkit-animation: drop 0.5454545455s 0.3333333333s forwards ease-in;
+    animation: drop 0.5454545455s 0.3333333333s forwards ease-in;
+}
+.box:nth-child(3).animate {
+    -webkit-animation: drop 0.1818181818s 0.5833333333s forwards ease-in;
+    animation: drop 0.1818181818s 0.5833333333s forwards ease-in;
+}
+.box:nth-child(4).animate {
+    -webkit-animation: drop 0.1818181818s 0.4166666667s forwards ease-in;
+    animation: drop 0.1818181818s 0.4166666667s forwards ease-in;
+}
+.box:nth-child(5).animate {
+    -webkit-animation: drop 0.6363636364s 0.4166666667s forwards ease-in;
+    animation: drop 0.6363636364s 0.4166666667s forwards ease-in;
+}
+.box:nth-child(6).animate {
+    -webkit-animation: drop 0.5454545455s 0.4166666667s forwards ease-in;
+    animation: drop 0.5454545455s 0.4166666667s forwards ease-in;
+}
+.box:nth-child(7).animate {
+    -webkit-animation: drop 0.0909090909s 0.4166666667s forwards ease-in;
+    animation: drop 0.0909090909s 0.4166666667s forwards ease-in;
+}
+.box:nth-child(8).animate {
+    -webkit-animation: drop 0.2727272727s 0.5833333333s forwards ease-in;
+    animation: drop 0.2727272727s 0.5833333333s forwards ease-in;
+}
+.box:nth-child(9).animate {
+    -webkit-animation: drop 0.2727272727s 0.4166666667s forwards ease-in;
+    animation: drop 0.2727272727s 0.4166666667s forwards ease-in;
+}
+.box:nth-child(10).animate {
+    -webkit-animation: drop 0.2727272727s 0.5s forwards ease-in;
+    animation: drop 0.2727272727s 0.5s forwards ease-in;
+}
+.box:nth-child(11).animate {
+    -webkit-animation: drop 0.6363636364s 0.5833333333s forwards ease-in;
+    animation: drop 0.6363636364s 0.5833333333s forwards ease-in;
+}
+.box:nth-child(12).animate {
+    -webkit-animation: drop 0.2727272727s 0.5833333333s forwards ease-in;
+    animation: drop 0.2727272727s 0.5833333333s forwards ease-in;
+}
+.box:nth-child(13).animate {
+    -webkit-animation: drop 0.3636363636s 0.0833333333s forwards ease-in;
+    animation: drop 0.3636363636s 0.0833333333s forwards ease-in;
+}
+.box:nth-child(14).animate {
+    -webkit-animation: drop 0.3636363636s 0.25s forwards ease-in;
+    animation: drop 0.3636363636s 0.25s forwards ease-in;
+}
+
+.blank {
+    flex: 0 0 1em;
+}
+
+.ko {
+    height: 4.0em;
+    width: auto;
+    margin-top: 65%;
+    margin-left: 46%;
+    opacity: 0;
+}
+.ko.animate {
+    -webkit-animation: ko 1.25s alternate forwards 3 ease-out;
+    animation: ko 1.25s alternate forwards 3 ease-out;
+}
+
+/* element who's going to receive this class will be mirrored */
+.flip {
+    transform: scaleX(-1);
+}
+
+/*sprite tile dimensions*/
+.chun-li {
+    position: absolute;
+    bottom: 212px;
+    margin-left: 23em;
+    width: 140px; /* Original width */
+    height: 150px; /* Original height */
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1141260/chun-li-sprite2.png");
+    transform: scale(2.0) scaleX(-1); /* Scale up by 2 times and flip horizontally */
+    transform-origin: center bottom; /* Set transform origin */
+}
+.listance {
+    -webkit-animation: listance steps(3) 0.75s infinite;
+    animation: listance steps(3) 0.75s infinite;
+}
+
+@-webkit-keyframes listance {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -420px 0px;
+    }
+}
+
+@keyframes listance {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -420px 0px;
+    }
+}
+.chunwalk {
+    -webkit-animation: chunwalk steps(8) 0.75s infinite;
+    animation: chunwalk steps(8) 0.75s infinite;
+}
+
+@-webkit-keyframes chunwalk {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -1120px 0px;
+    }
+}
+
+@keyframes chunwalk {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -1120px 0px;
+    }
+}
+.likick {
+    -webkit-animation: likick steps(7) 0.8s infinite;
+    animation: likick steps(7) 0.8s infinite;
+}
+
+@-webkit-keyframes likick {
+    from {
+        background-position: 0px -150px;
+    }
+    to {
+        background-position: -980px -150px;
+    }
+}
+
+@keyframes likick {
+    from {
+        background-position: 0px -150px;
+    }
+    to {
+        background-position: -980px -150px;
+    }
+}
+.lipunch {
+    -webkit-animation: lipunch steps(3) 0.75s infinite;
+    animation: lipunch steps(3) 0.75s infinite;
+}
+
+@-webkit-keyframes lipunch {
+    from {
+        background-position: 0px -300px;
+    }
+    to {
+        background-position: -420px -300px;
+    }
+}
+
+@keyframes lipunch {
+    from {
+        background-position: 0px -300px;
+    }
+    to {
+        background-position: -420px -300px;
+    }
+}
+.lihikick {
+    -webkit-animation: lihikick steps(8) 0.75s infinite;
+    animation: lihikick steps(8) 0.75s infinite;
+}
+
+@-webkit-keyframes lihikick {
+    from {
+        background-position: 0px -450px;
+    }
+    to {
+        background-position: -1120px -450px;
+    }
+}
+
+@keyframes lihikick {
+    from {
+        background-position: 0px -450px;
+    }
+    to {
+        background-position: -1120px -450px;
+    }
+}
+.gethit {
+    -webkit-animation: gethit steps(3) 0.25s infinite;
+    animation: gethit steps(3) 0.25s infinite;
+}
+
+@-webkit-keyframes gethit {
+    from {
+        background-position: 0px -600px;
+    }
+    to {
+        background-position: -420px -600px;
+    }
+}
+
+@keyframes gethit {
+    from {
+        background-position: 0px -600px;
+    }
+    to {
+        background-position: -420px -600px;
+    }
+}
+.knockout {
+    -webkit-animation: knockout steps(3) 1.5s 1 forwards;
+    animation: knockout steps(3) 1.5s 1 forwards;
+}
+
+@-webkit-keyframes knockout {
+    from {
+        background-position: 0px -750px;
+    }
+    to {
+        background-position: -420px -750px;
+    }
+}
+
+@keyframes knockout {
+    from {
+        background-position: 0px -750px;
+    }
+    to {
+        background-position: -420px -750px;
+    }
+}
+.jump {
+    -webkit-animation: jump steps(3) 0.75s infinite;
+    animation: jump steps(3) 0.75s infinite;
+}
+
+@-webkit-keyframes jump {
+    from {
+        background-position: 0px -900px;
+    }
+    to {
+        background-position: -420px -900px;
+    }
+}
+
+@keyframes jump {
+    from {
+        background-position: 0px -900px;
+    }
+    to {
+        background-position: -420px -900px;
+    }
+}
+/* ken */
+
+/* ken */
+/* ken */
+.ken, .fireball {
+    position: absolute;
+    bottom: 212px;
+    margin-left: 7em;
+    width: 100px; /* Original width */
+    height: 114.3px; /* Original height */
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1141260/ken-sprite-2.png");
+    /* other sprites preloading */
+    transform: scale(2); /* Scale up by 1.5 times */
+    transform-origin: center bottom; /* Set transform origin */
+}
+
+
+
+
+/* ken's fireball */
+.fireball {
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+    margin-left: 0;
+    /* default margin-left */
+    background-position: 140px 320px;
+    /* default background position */
+    transition: margin 1s linear;
+    /* triggering the movement with this class */
+    -webkit-animation: fireball steps(2) 0.15s infinite;
+    animation: fireball steps(2) 0.15s infinite;
+}
+
+.fireball:before {
+    left: 25px;
+    right: 50em;
+}
+.fireball.moving {
+    margin-left: 220px;
+}
+
+@-webkit-keyframes fireball {
+    from {
+        background-position: 0px -457.2px;
+    }
+    to {
+        background-position: -200px -457.2px;
+    }
+}
+
+@keyframes fireball {
+    from {
+        background-position: 0px -457.2px;
+    }
+    to {
+        background-position: -200px -457.2px;
+    }
+}
+/* ken's fireball impact explosion */
+.explode {
+    -webkit-animation: explode steps(4) 0.5s 1;
+    animation: explode steps(4) 0.5s 1;
+}
+
+@-webkit-keyframes explode {
+    from {
+        background-position: 0px -571.5px;
+    }
+    to {
+        background-position: -400px -571.5px;
+    }
+}
+
+@keyframes explode {
+    from {
+        background-position: 0px -571.5px;
+    }
+    to {
+        background-position: -400px -571.5px;
+    }
+}
+/* stance */
+.stance {
+    -webkit-animation: stance steps(4) 0.5s infinite;
+    animation: stance steps(4) 0.5s infinite;
+}
+
+@-webkit-keyframes stance {
+    from {
+        background-position: 0px -114.3px;
+    }
+    to {
+        background-position: -400px -114.3px;
+    }
+}
+
+@keyframes stance {
+    from {
+        background-position: 0px -114.3px;
+    }
+    to {
+        background-position: -400px -114.3px;
+    }
+}
+/* hadoken - must be declared AFTER .stance */
+.hadoken {
+    -webkit-animation: hadoken steps(4) 0.5s infinite;
+    animation: hadoken steps(4) 0.5s infinite;
+}
+
+@-webkit-keyframes hadoken {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -400px 0px;
+    }
+}
+
+@keyframes hadoken {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -400px 0px;
+    }
+}
+/* punch */
+.punch {
+    -webkit-animation: punch steps(3) 0.15s infinite;
+    animation: punch steps(3) 0.15s infinite;
+}
+
+@-webkit-keyframes punch {
+    from {
+        background-position: 0px -228.6px;
+    }
+    to {
+        background-position: -300px -228.6px;
+    }
+}
+
+@keyframes punch {
+    from {
+        background-position: 0px -228.6px;
+    }
+    to {
+        background-position: -300px -228.6px;
+    }
+}
+/* walking */
+.kenwalk {
+    -webkit-animation: kenwalk steps(5) 0.5s infinite;
+    animation: kenwalk steps(5) 0.5s infinite;
+}
+
+@-webkit-keyframes kenwalk {
+    from {
+        background-position: 0px -342.9px;
+    }
+    to {
+        background-position: -500px -342.9px;
+    }
+}
+
+@keyframes kenwalk {
+    from {
+        background-position: 0px -342.9px;
+    }
+    to {
+        background-position: -500px -342.9px;
+    }
+}
+/* kick */
+.kick {
+    -webkit-animation: kick steps(5) 0.5s infinite;
+    animation: kick steps(5) 0.5s infinite;
+}
+
+@-webkit-keyframes kick {
+    from {
+        background-position: 0px -685.8px;
+    }
+    to {
+        background-position: -500px -685.8px;
+    }
+}
+
+@keyframes kick {
+    from {
+        background-position: 0px -685.8px;
+    }
+    to {
+        background-position: -500px -685.8px;
+    }
+}
+/* reverse kick */
+.reversekick {
+    -webkit-animation: reversekick steps(5) 0.5s infinite;
+    animation: reversekick steps(5) 0.5s infinite;
+}
+
+@-webkit-keyframes reversekick {
+    from {
+        background-position: 0px -800.1px;
+    }
+    to {
+        background-position: -500px -800.1px;
+    }
+}
+
+@keyframes reversekick {
+    from {
+        background-position: 0px -800.1px;
+    }
+    to {
+        background-position: -500px -800.1px;
+    }
+}
+/* kneel down */
+.kneel {
+    -webkit-animation: kneel steps(1) 0.2s infinite;
+    animation: kneel steps(1) 0.2s infinite;
+}
+
+@-webkit-keyframes kneel {
+    from {
+        background-position: 0px -1028.7px;
+    }
+    to {
+        background-position: -100px -1028.7px;
+    }
+}
+
+@keyframes kneel {
+    from {
+        background-position: 0px -1028.7px;
+    }
+    to {
+        background-position: -100px -1028.7px;
+    }
+}
+/* jump */
+.jump {
+    transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
+    bottom: 225px;
+    -webkit-animation: jump steps(7) 1s infinite;
+    animation: jump steps(7) 1s infinite;
+}
+.jump.down {
+    bottom: 112px;
+}
+
+@keyframes jump {
+    from {
+        background-position: 0px -914.4px;
+    }
+    to {
+        background-position: -700px -914.4px;
+    }
+}
+/* shoryuken */
+.shoryuken {
+    height: 110px;
+    transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
+    bottom: 225px;
+    -webkit-animation: shoryuken steps(7) 1s infinite;
+    animation: shoryuken steps(7) 1s infinite;
+}
+.shoryuken.down {
+    bottom: 112px;
+}
+
+@-webkit-keyframes shoryuken {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -700px 0px;
+    }
+}
+
+@keyframes shoryuken {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -700px 0px;
+    }
+}
+/* tatsumaki senpuu kyaku */
+.tatsumaki {
+    height: 110px;
+    transition: bottom 0.2s cubic-bezier(0.99, 0.005, 0, 0.42);
+    bottom: 132px;
+    -webkit-animation: tatsumaki steps(13) 2s infinite;
+    animation: tatsumaki steps(13) 2s infinite;
+}
+.tatsumaki.down {
+    bottom: 112px;
+}
+
+@-webkit-keyframes tatsumaki {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -1300px 0px;
+    }
+}
+
+@keyframes tatsumaki {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -1300px 0px;
+    }
+}
+/* get hit */
+.hit {
+    -webkit-animation: hit steps(2) 0.35s infinite;
+    animation: hit steps(2) 0.35s infinite;
+}
+
+@-webkit-keyframes hit {
+    from {
+        background-position: 0px -1143px;
+    }
+    to {
+        background-position: -200px -1143px;
+    }
+}
+
+@keyframes hit {
+    from {
+        background-position: 0px -1143px;
+    }
+    to {
+        background-position: -200px -1143px;
+    }
+}
+@media (max-width: 700px) {
+    body {
+        transform: scale(0.65);
+    }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+#scene.fadeOut {
+    animation: fadeOut 2s ease forwards;
+}
